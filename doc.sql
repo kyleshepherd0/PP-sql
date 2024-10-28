@@ -24,9 +24,10 @@ create table nba_schedule (
 -- This is a template for every different team for lookup values
 create table nba_team_{ID}(
     year INT,
-    plyer INT,
-    position VARCHAR(100),
-    classification VARCHAR(100)
+    plyer_name VARCHAR(100),
+    player_id INT,
+    position VARCHAR(100),  --PG, SG, SF, PF, C
+    classification VARCHAR(100) --S (28), RP (20), BN (10)
 );
 
 -- This is a template for each player's individual correlation table
